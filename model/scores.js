@@ -5,16 +5,20 @@ const scores = new mongoose.Schema({
         type: String
     },
     email: {
-        type: String
+        type: String,
+        unique: true
     },
     firstTest: {
-        type: Number
+        type: Number,
+        index: true
     },
     secondTest: {
-        type: Number
+        type: Number,
+        index: true
     },
     thirdTest: {
-        type: Number
+        type: Number,
+        index: true
     }
 });
 

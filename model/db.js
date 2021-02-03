@@ -3,7 +3,8 @@ require('./scores')
 
 mongoose.connect('mongodb://localhost:27017/testScoreDB', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex:true
 }, (err) => {
     if (!err) {
         console.log('Database is connected')

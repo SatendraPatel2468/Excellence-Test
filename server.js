@@ -5,6 +5,7 @@ const mongoose = require('./model/db')
 const router = require('./controller/scoreController')
 const path = require('path')
 const ejs = require('ejs')
+const scores = require('./model/scores')
 
 
 app.set('view engine', 'ejs')
@@ -15,7 +16,7 @@ app.use('/', router)
 
 
 app.get('/', (req, res) => {
-    res.send('Hello from Server Page')
+    res.send('Hello world')
 })
 
 app.listen(port, (req, res) => {

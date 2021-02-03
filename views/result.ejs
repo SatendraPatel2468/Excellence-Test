@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add and Edit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                         <%= data.thirdTest %>
                     </td>
                     <td>
-                        <%=  %>
+                        <%= data.avg %>
                     </td>
 
                 </tr>
@@ -69,13 +70,13 @@
         </thead>
         <tr>
             <td>
-                <%= %>
+                <%= firstTestResult.name %>
             </td>
             <td>
-                <%=  %>
+                <%= firstTestResult.firstTestHighest %>
             </td>
             <td>
-                <%=  %>
+                <%= firstTestResult.firstTestAvg %>
             </td>
 
         </tr>
@@ -99,13 +100,13 @@
 
         <tr>
             <td>
-                <%= %>
+                <%= secondTestResult.name %>
             </td>
             <td>
-                <%= %>
+                <%= secondTestResult.secondTestHighest %>
             </td>
             <td>
-                <%= %>
+                <%= secondTestResult.secondTestAvg %>
             </td>
 
 
@@ -127,15 +128,14 @@
 
         <tr>
             <td>
-                <%= %>
+                <%= thirdTestResult.name %>
             </td>
             <td>
-                <%= %>
+                <%= thirdTestResult.thirdTestHighest %>
             </td>
             <td>
-                <%= %>
+                <%= thirdTestResult.thirdTestAvg %>
             </td>
-            <td>
 
 
         </tr>
